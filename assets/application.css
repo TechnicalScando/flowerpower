@@ -1,7 +1,54 @@
 * {
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Sans";
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
+    font-family: 'Noto Sans';
+    font-weight: 700;
     font-size: 40px;
+    line-height: 54px;
+    letter-spacing: -0.01em;
+
+    color: #000000;
+
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    background: #61A584;
+    border-radius: 4px;
+
+}
+
+.button.secondary {
+    background: #FFFFFF;
+    /* Primary Color */
+
+    border: 1px solid #61A584;
+    border-radius: 4px;
+}
+
+.buttontxt {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+
+    /* White */
+
+    color: #FFFFFF;
+
+    text-decoration: none;
 }
