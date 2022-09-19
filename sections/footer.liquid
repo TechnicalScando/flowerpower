@@ -6,13 +6,18 @@
         <h4 class="strong">
             This is a theme footer
         </h4>
-        <p class="body">
-            Lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit. 
-                        Pellentesque sit amet consequat nulla. 
-                        Pellentesque euismod viverra ex, 
-                        id hendrerit tortor porta ac.
-        </p>
+        {% if section.settings.description != blank %}
+            <p class="body">{{section.settings.description}}</p>
+            {% else %}
+            <p class="body">
+                Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. 
+                            Pellentesque sit amet consequat nulla. 
+                            Pellentesque euismod viverra ex, 
+                            id hendrerit tortor porta ac.
+            </p>
+        {% endif %}
+        
     </div>
     <div class="socialBar">
         {% render 'socialBar' %}
@@ -36,3 +41,15 @@
         </div>
     </div>
 </div>
+
+{% schema %}
+{
+    "settings": [
+    {
+       "type": "text",
+       "id": "description",
+       "label": "Description"
+    }
+    ]
+}
+{% endschema %}
