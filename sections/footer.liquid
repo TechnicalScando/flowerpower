@@ -25,7 +25,6 @@
         </div>
     {% endif %}
     <div class="footerMenu">
-        <h3>footer menu</h3>
         {% for link in linklists.footer.links %}
             {% assign child_list_handle = link.title | handleize %}
             {% if linklists[child_list_handle].links != blank %}
@@ -57,7 +56,7 @@
 {
     "settings": [
     {
-       "type": "text",
+       "type": "textarea",
        "id": "description",
        "label": "Description"
     },
