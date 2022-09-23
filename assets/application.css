@@ -126,3 +126,10 @@ a {
     padding: 0px;
     gap: 24px;
 }
+
+.ratingBar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+}

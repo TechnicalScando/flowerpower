@@ -2,3 +2,11 @@
 {% assign featured_image = current_variant.featured_image | default: product.featured_image %}
 
 {% render 'productThumbnail', media: featured_image %}
+<h2>{{ product.title }}</h2>
+{% if product.description != blank %}
+    <h4 class="subtitle">{{ product.description }}</h4>
+    {% else %}
+      <h4 class="subtitle">Its blank</h4>
+{% endif %}
+{% render 'ratingBar' %}
+<h4 class="subtitle">{{ product.price }}</h4>
