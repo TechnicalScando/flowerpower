@@ -1,0 +1,21 @@
+.topContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+}
+
+.bottomContent {
+    padding-left: 32px;
+}
+
+.pickupBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
