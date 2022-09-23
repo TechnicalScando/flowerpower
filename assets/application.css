@@ -29,6 +29,16 @@ a {
     color: #000000;
 }
 
+.subtleText {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: #969696;
+}
+
 .width100 {
     width: 100%;
     box-sizing: border-box;
@@ -133,3 +143,4 @@ a {
     align-items: flex-start;
     gap: 8px;
 }
+

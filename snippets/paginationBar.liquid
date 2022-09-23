@@ -1,0 +1,15 @@
+{{ 'paginationBar.css' | asset_url | stylesheet_tag }}
+
+<div class="paginationBar">
+    {% render 'icon' with 'leftarrow'%}
+    <div class="paginationButton">
+        <p class="subtleText">1</p>
+    </div>
+    <div class="paginationButton">
+        <p class="subtleText">2</p>
+    </div>
+    <div class="paginationButton">
+        <p class="subtleText">3</p>
+    </div>
+    {% render 'icon' with 'rightarrow'%}
+</div>

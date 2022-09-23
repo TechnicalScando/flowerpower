@@ -9,4 +9,7 @@
       <h4 class="subtitle">Its blank</h4>
 {% endif %}
 {% render 'ratingBar' %}
-<h4 class="subtitle">{{ product.price }}</h4>
+<h4 class="subtitle">{{ product.price | money }}</h4>
+<h6 class="pretitle">tax included</h6>
+<h6 class="small">Size selection</h6>
+{% render 'paginationBar' %}
