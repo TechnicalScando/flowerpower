@@ -1,15 +1,12 @@
 {{ 'pickupBar.css'| asset_url | stylesheet_tag }}
 <div class="pickupBar">
-    <div class="topContent">
-        {% render 'icon' with 'check' %}
+    {% render 'icon' with 'check' %}
+    <div class="pickupContent">
         <h6 class="strong">
             Pickup available at US Warehouse
         </h6>
-    </div>
-    <div class="bottomContent">
         <p class="body">
             Usually ready in 1 hour</p>
         <a href="{{ shop.url }}">Check availability in other stores</a>
     </div>
-    
 </div>

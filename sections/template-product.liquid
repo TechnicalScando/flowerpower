@@ -1,22 +1,35 @@
+{{ 'template-product.css' | asset_url | stylesheet_tag}}
+
+
 {% assign current_variant = product.selected_or_first_available_variant %}
 {% assign featured_image = current_variant.featured_image | default: product.featured_image %}
 
-{% render 'productThumbnail', media: featured_image %}
-<h2>{{ product.title }}</h2>
-{% if product.description != blank %}
-    <h4 class="subtitle">{{ product.description }}</h4>
-    {% else %}
-      <h4 class="subtitle">Its blank</h4>
-{% endif %}
-{% render 'ratingBar' %}
-<h4 class="subtitle">{{ product.price | money }}</h4>
-<h6 class="pretitle">tax included</h6>
-<h6 class="small">Size selection</h6>
-{% render 'paginationBar' %}
-<a href="{{ shop.url }} " class="button  width100">
-  <p class="buttontxt ">add to cart</p>
-</a> 
-<a href="{{ shop.url }} " class="button secondary width100">
-  <p class="buttontxt secondary">buy it now</p>
-</a> 
-{% render 'pickupBar' %}
+<div class="productSection">
+    {% render 'productThumbnail', media: featured_image %}
+    <div class="productDetails">
+        <h2>{{ product.title }}</h2>
+        {% if product.description != blank %}
+            <h4 class="subtitle">{{ product.description }}</h4>
+        {% else %}
+            <h4 class="subtitle">Its blank</h4>
+        {% endif %}
+    </div>
+    <div class="infoBar">
+        {% render 'ratingBar' %}
+        <h4 class="subtitle">{{ product.price | money }}</h4>
+        <h6 class="pretitle">tax included</h6>
+    </div>
+    <div class="productPagination">
+        <h6 class="small">Size selection</h6>
+        {% render 'paginationBar' %}
+    </div>
+    <div class="productButtons">
+        <a href="{{ shop.url }} " class="button  width100">
+            <p class="buttontxt ">add to cart</p>
+        </a>
+        <a href="{{ shop.url }} " class="button secondary width100">
+            <p class="buttontxt secondary">buy it now</p>
+        </a>
+    </div>
+    {% render 'pickupBar' %}
+</div>

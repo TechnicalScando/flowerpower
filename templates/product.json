@@ -1,4 +1,5 @@
 {
+    "wrapper": "div#product_template.productTemplate",
     "sections": {
         "template": {
             "type": "template-product"

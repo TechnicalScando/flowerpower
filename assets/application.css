@@ -143,3 +143,10 @@ a {
     gap: 8px;
 }
 
+.productTemplate {
+    display: flex;
+    flex-direction: column;
+    padding: 36px 24px;
+    gap: 36px;
+}
+
