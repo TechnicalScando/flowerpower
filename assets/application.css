@@ -15,6 +15,19 @@ h2 {
 
 }
 
+h3 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+    
+    letter-spacing: -0.02em;
+    
+    color: #000000;
+}
+
 a {
     display: flex;
     flex-direction: row;
@@ -144,13 +157,7 @@ a {
     width: 18px;
 }
 
-.pageNotFoundContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px 24px;
-    gap: 24px;
-}
+
 
 .ratingBar {
     display: flex;
