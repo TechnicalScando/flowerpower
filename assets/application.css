@@ -144,49 +144,11 @@ a {
     width: 18px;
 }
 
-.socialBarContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-}
-
-.socialBar {
-    width: 100%;
-}
-
 .pageNotFoundContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px 24px;
-    gap: 24px;
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 36px 24px;
-    gap: 36px;
-}
-
-.footerMenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 15px;
-}
-
-.footerDetails {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
     gap: 24px;
 }
 

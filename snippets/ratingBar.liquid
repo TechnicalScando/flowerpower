@@ -1,3 +1,5 @@
+{{ 'ratingBar.css' | asset_url | stylesheet_tag }}
+
 <div class="ratingBar">
     {% for i in (1..5) %}
     {% render 'icon' with 'ratingstar'%}
