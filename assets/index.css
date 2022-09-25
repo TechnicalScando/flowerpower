@@ -1,0 +1,18 @@
+
+
+.heroTextContainer {
+    position: absolute;
+}
+
+.heroImage {
+    width: 100%;
+    object-fit:cover; 
+    height: 453px;
+}
+
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

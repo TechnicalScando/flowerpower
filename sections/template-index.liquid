@@ -1,10 +1,10 @@
-{% for product in collections.frontpage.products limit:4 %}
-  <div>
-    <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
-    {{ product.price | money }}
-    {% unless product.available %}<br><strong>sold out</strong>{% endunless %}
-    <a href="{{ product.url | within: collection }}">
-      <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
-    </a>
-  </div>
-{% endfor %}
+{{ 'index.css' | asset_url | stylesheet_tag }}
+
+<div class="heroContainer">
+    <div class="heroTextContainer">
+        <h2 class="heroText">Hero Title</h2>
+        <p class="subtitle heroText">Welcome to the store</p>
+       
+    </div>
+    {{ 'product-1' | placeholder_svg_tag: 'heroImage' }}
+</div>
