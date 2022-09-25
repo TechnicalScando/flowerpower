@@ -2,9 +2,12 @@
     "sections": {
         "template": {
             "type": "template-index"
+        },
+        "card": {
+            "type": "product-card"
         }
     },
     "order": [
-        "template"
+        "template", "card"
     ]
 }
