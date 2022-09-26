@@ -1,0 +1,30 @@
+
+
+.heroTextContainer {
+    position: absolute;
+}
+
+.heroImage {
+    width: 100%;
+    object-fit:cover; 
+    height: 453px;
+}
+
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroText {
+    color: #FFFFFF;  
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 24px;
+    gap: 36px;
+}
