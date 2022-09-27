@@ -8,22 +8,22 @@
         {% for article in blog.articles %}
             <div class="heroContainer">
                 <div class="heroTextContainer">
-                    <h2 class="heroText">
-                        <a href="{{ article.url }}">{{ article.title }}</a>
-                    </h2>
-                    <p class="subtitle heroText">
-                        {% if article.excerpt.size > 0 %}
-                            {{ article.excerpt }}
-                        {% else %}
-                            <p>{{ article.content | strip_html | truncatewords: 25 }}</p>
-                        {% endif %}
-                    </p>
+                    <a class="articleTitle" href="{{ article.url }}">
+                        <h2 class="heroText">{{ article.title }}</h2>
+                    </a>
+                    {% if article.excerpt.size > 0 %}
+                        <p class="subtitle heroText">{{ article.excerpt |strip_html |truncatewords: 10}}</p>
+                    {% else %}
+                        <p class="subtitle heroText">{{ article.content | strip_html | truncatewords: 10 }}</p>
+                    {% endif %}
                 </div>
+
                 {% if article.image != blank %}
                     <img src="{{ article.image | image_url: width: 375 }}" class="heroImage" alt="">
                 {% else %}
                     {{ 'product-1' | placeholder_svg_tag: 'heroImage' }}
                 {% endif %}
+
 
             </div>
         {% endfor %}
