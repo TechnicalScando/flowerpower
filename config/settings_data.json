@@ -1,6 +1,17 @@
 {
-  "current": "Default",
+  "current": {
+    "sections": {
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "description": "This is a great store, shop here every day. You want details? The details are as follows. This store is great.",
+          "socialEnable": true
+        }
+      }
+    },
+    "content_for_index": []
+  },
   "presets": {
-    "Default": { }
+    "Default": {}
   }
 }

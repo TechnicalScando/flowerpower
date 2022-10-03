@@ -1,13 +1,41 @@
 {
-    "sections": {
-        "template": {
-            "type": "template-index"
-        },
-        "card": {
-            "type": "product-card"
-        }
+  "sections": {
+    "template": {
+      "type": "template-index",
+      "settings": {}
     },
-    "order": [
-        "template", "card"
-    ]
+    "card": {
+      "type": "product-card",
+      "blocks": {
+        "89855b1c-a739-44a8-bdca-9d5091d5c1d5": {
+          "type": "Card",
+          "settings": {
+            "product": "black-lotus"
+          }
+        },
+        "2bccf2d2-7ee2-4446-bc0d-236597aaa23d": {
+          "type": "Card",
+          "settings": {
+            "product": "classic-white"
+          }
+        },
+        "d42b99bb-151e-4b0b-96a7-9ae46b03f5ca": {
+          "type": "Card",
+          "settings": {
+            "product": "blue-rose"
+          }
+        }
+      },
+      "block_order": [
+        "89855b1c-a739-44a8-bdca-9d5091d5c1d5",
+        "2bccf2d2-7ee2-4446-bc0d-236597aaa23d",
+        "d42b99bb-151e-4b0b-96a7-9ae46b03f5ca"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "template",
+    "card"
+  ]
 }

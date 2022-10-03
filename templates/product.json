@@ -1,11 +1,16 @@
 {
-    "wrapper": "div#product_template.productTemplate",
-    "sections": {
-        "template": {
-            "type": "template-product"
-        }
+  "wrapper": "div#product_template.productTemplate",
+  "sections": {
+    "template": {
+      "type": "template-product",
+      "settings": {}
     },
-    "order": [
-        "template"
-    ]
+    "details": {
+      "type": "details-section",
+      "settings": {}
+    }
+  },
+  "order": [
+    "template","details"
+  ]
 }
