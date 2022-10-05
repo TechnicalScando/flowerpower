@@ -1,11 +1,13 @@
-<h2>Check out these details!</h2>
+{{ 'details-section.css' | asset_url | stylesheet_tag }}
+<div class= 'details-content'>
+  <h2>Check out these details!</h2>
 
-{% for block in section.blocks %}
-    {% assign detailTitle = block.settings.detailTitle %}
-    {% assign detailContents = block.settings.detailContents %}
-    {%- render 'dropdownDetails', title: detailTitle, details: detailContents  -%}
-{% endfor %}
-
+  {% for block in section.blocks %}
+      {% assign detailTitle = block.settings.detailTitle %}
+      {% assign detailContents = block.settings.detailContents %}
+      {%- render 'dropdownDetails', title: detailTitle, details: detailContents  -%}
+  {% endfor %}
+</div>
 
 {% schema %}
 {
