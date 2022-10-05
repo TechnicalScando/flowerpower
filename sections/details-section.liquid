@@ -1,3 +1,32 @@
 <h2>Check out these details!</h2>
 
-{%- render 'dropdownDetails' -%}
+{% for block in section.blocks %}
+    {% assign detailTitle = block.settings.detailTitle %}
+    {% assign detailContents = block.settings.detailContents %}
+    {%- render 'dropdownDetails', title: detailTitle, details: detailContents  -%}
+{% endfor %}
+
+
+{% schema %}
+{
+  "name": "Details Section",
+  "blocks": [
+    {
+      "name": "Detail Dropdown",
+      "type": "detailDropdown",
+      "settings": [
+        {
+          "type": "text",
+          "id": "detailTitle",
+          "label": "Detail Title"
+        },
+        {
+          "type": "textarea",
+          "id": "detailContents",
+          "label": "Detail Contents"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
