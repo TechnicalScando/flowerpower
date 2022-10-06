@@ -1,7 +1,7 @@
 {{ 'details-section.css' | asset_url | stylesheet_tag }}
 <div class= 'details-content'>
-  <h2>Check out these details!</h2>
-
+  <h3>{{ section.settings.cardTitle }}</h3>
+  <p>{{ section.settings.cardContent }}</p>
   {% for block in section.blocks %}
       {% assign detailTitle = block.settings.detailTitle %}
       {% assign detailContents = block.settings.detailContents %}
@@ -12,6 +12,18 @@
 {% schema %}
 {
   "name": "Details Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "cardTitle",
+      "label": "Card Title"
+    },
+    {
+      "type": "textarea",
+      "id": "cardContent",
+      "label": "Card Content"
+    }
+  ],
   "blocks": [
     {
       "name": "Detail Dropdown",

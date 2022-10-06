@@ -1,12 +1,30 @@
 <style>
   summary {
     list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0px;
+
+    box-sizing: border-box;
+    border-top: 1px solid #4F9372;
+
+    color: white;
+
+  }
+
+  details {
+    width: 100%;
+    color: white;
+    
   }
 </style>
 
 <details>
-  <summary>{{ title }}</summary>
+  <summary class="strong">{{ title }}{% render 'icon' with 'plus'%}</summary>
   <p>
     {{ details }}
   </p>
+  
 </details>
